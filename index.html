@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="naslov">
+        <h1>Pokemon search app</h1>
+    </div>
+
+    <div class="kutija">
+        <div class="upper">
+            <div>
+                <p>Search for Pokémon Name:</p>
+            </div>
+
+            <form id="search-form">
+                <input type="text" name="pokemon" id="search-input" required />
+                <button id="search-button">Search</button>
+            </form>
+
+        </div>
+        <div class="middle">
+            <div class="ni">
+                <p class="name" id="name"></p>
+                <p class="id" id="id"></p>
+            </div>
+
+            <div class="wh">
+                <p class="weight" id="weight"></p>
+                <p class="height" id="height"></p>
+            </div>
+
+            <div id="sprite-container" class="sprite-container">
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="stats">
+                <div>
+                    <p>Base</p>
+                </div>
+
+                <div>
+                    <p>HP</p>
+                </div>
+                <div>
+                    <p>Attack</p>
+                </div>
+                <div>
+                    <p>Defense</p>
+                </div>
+                <div>
+                    <p>Sp.Attack</p>
+                </div>
+                <div>
+                    <p>Sp.Defense</p>
+                </div>
+                <div>
+                    <p>Speed</p>
+                </div>
+            </div>
+
+            <div class="st2">
+                <div>
+                    <p>Stats</p>
+                </div>
+
+                <div>
+                    <p class="hp" id="hp"></p>
+                </div>
+                <div>
+                    <p class="att" id="att"></p>
+                </div>
+                <div>
+                    <p class="def" id="def"></p>
+                </div>
+                <div>
+                    <p class="sp-att" id="sp-att"></p>
+                </div>
+                <div>
+                    <p class="sp-deff" id="sp-def"></p>
+                </div>
+                <div>
+                    <p class="speed" id="speed"></p>
+                </div>
+            </div>
+                
+        </div>
+            </div>
+            
+
+    <script src="./index.js"></script>
+</body>
+</html>
