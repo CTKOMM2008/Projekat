@@ -21,6 +21,7 @@ body{
 .info{
     display: flex;
     flex-direction: row;
+    margin-top: 1.5rem;
 }
 
 .stats div{
@@ -29,7 +30,7 @@ body{
     align-items: center;
     background-color: blueviolet;
     color: antiquewhite;
-    margin: 0.7rem;
+    margin: 0rem 0.7rem 0.7rem 0.7rem;
     width: 300px;
     height: 35px;
     padding-left: 0.5rem;
@@ -49,7 +50,7 @@ body{
     align-items: center;
     background-color: blueviolet;
     color: antiquewhite;
-    margin: 0.7rem;
+    margin: 0rem 0.7rem 0.7rem 0rem;
     width: 145px;
     height: 35px;
     padding-left: 0.5rem;
@@ -77,10 +78,31 @@ img{
 }
 
 .sprite-container{
-    height: 16rem;
+    height: 11rem;
     width: 16rem;
-    margin-left: 8rem;
+    margin-left: 7rem;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.typ{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 2rem;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.7rem;
+}
+
+.type span{
+    height: 100%;
+    width: 100%;
 }
 
 .upper{
@@ -95,8 +117,9 @@ img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 18px;
+    height: 40%;
 }
 
 .middle a{
@@ -141,7 +164,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     margin-left: 3rem;
 }
 
