@@ -11,6 +11,7 @@ const specialDefense = document.getElementById('sp-def');
 const speed = document.getElementById('speed');
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
+const types = document.getElementById('type');
 
 const getPokemon = async () => {
   try {
@@ -28,6 +29,7 @@ const getPokemon = async () => {
     spriteContainer.innerHTML = `
       <img id="sprite" src="${data.sprites.front_default}" alt="${data.name} front default sprite">
     `;
+    
 
     // Set stats
     hp.textContent = data.stats[0].base_stat;
@@ -36,6 +38,10 @@ const getPokemon = async () => {
     specialAttack.textContent = data.stats[3].base_stat;
     specialDefense.textContent = data.stats[4].base_stat;
     speed.textContent = data.stats[5].base_stat;
+
+    types.innerHTML = data.types
+      .map(obj => `<span class="type ${obj.type.name}">${obj.type.name}</span>`)
+      .join('');
 
   } catch (err) {
     resetDisplay();
