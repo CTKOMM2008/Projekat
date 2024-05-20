@@ -21,7 +21,7 @@ const getPokemon = async () => {
     );
     const data = await response.json();
 
-    // Set Pokémon info
+    
     pokemonName.textContent = `${data.name.toUpperCase()}`;
     pokemonID.textContent = `#${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
@@ -31,7 +31,7 @@ const getPokemon = async () => {
     `;
     
 
-    // Set stats
+    
     hp.textContent = data.stats[0].base_stat;
     attack.textContent = data.stats[1].base_stat;
     defense.textContent = data.stats[2].base_stat;
@@ -54,7 +54,7 @@ const resetDisplay = () => {
   const sprite = document.getElementById('sprite');
   if (sprite) sprite.remove();
 
-  // reset stats
+ 
   pokemonName.textContent = '';
   pokemonID.textContent = '';
   types.innerHTML = '';
